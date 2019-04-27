@@ -23,8 +23,11 @@ class MovieViewController: UIViewController, MoviesPresenter {
 
 
     @IBAction func addMovieButtonPressed(_ sender: Any) {
-        guard let title = movieTitleText.text else { return }
+        guard let title = movieTitleText.text, !title.isEmpty else { return }
         
+        movieTitleText.text = ""
         movieController?.createMovie(movieTitle: title)
     }
+    
+    
 }

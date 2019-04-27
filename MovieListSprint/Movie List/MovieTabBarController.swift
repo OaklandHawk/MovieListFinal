@@ -20,7 +20,7 @@ class MovieTabViewController: UITabBarController {
                 childViewController.movieController = movieController
             }
         }
-        
+      
         
     }
 
